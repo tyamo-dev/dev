@@ -1,24 +1,21 @@
 <template>
   <div id="app">
-    <div class="myName">
-      I'm RK
-      Nice to meet you
-    </div>  
+      <Homepage/>
   </div>
 </template>
 
 <script>
+import '@/main.less';
+import Homepage from '@/views/Homepage.vue';
 
 export default {
   name: 'App',
+  components: {
+    Homepage,
+  }
 }
 </script>
 
 <style>
 
-.myName {
-  color: red;
-  font-size: 48px;
-  font-weight: 500;
-}
 </style>
